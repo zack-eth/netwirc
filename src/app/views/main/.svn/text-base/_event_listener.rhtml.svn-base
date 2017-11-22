@@ -1,2 +1,0 @@
-<%= periodically_call_remote :url => { :controller => 'main', :action => 'check_for_events', :id => session[:user_id] }, :frequency => 5 %>
-<%= periodically_call_remote :url => { :controller => 'main', :action => 'ping' }, :frequency => 15 %>

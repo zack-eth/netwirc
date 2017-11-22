@@ -1,5 +1,0 @@
-<div id="private_message_type_box">
-		    <%= form_remote_tag :url => { :controller => 'channel', :action => 'pm_say', :private_message_id => @private_message.id }, :loading => "$('private_message_type_box_entry_field').value = ''; $('private_message_type_box_entry_field').focus;", :complete => "eval(request.responseText)" %>
-			    <input id="private_message_type_box_entry_field" type="text" name="message" value="Type here and press enter when you're done.." onclick="$('private_message_type_box_entry_field').value=''" /><input type="submit" value="Say" style="display: none;" />
-		    <%= end_form_tag %>
-</div>

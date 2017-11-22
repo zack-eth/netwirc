@@ -1,3 +1,0 @@
-<span class="panel_header_contents"><span class="panel_header_title"><%= title %>: </span><span class="panel_header_current"><%= current %></span></span>
-<br / >
-<div class="hr_gray_fade"><%= image_tag("hr_gray_fade.jpg") %></div>

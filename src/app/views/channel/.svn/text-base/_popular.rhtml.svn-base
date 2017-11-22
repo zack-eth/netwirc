@@ -1,6 +1,0 @@
-<div id="popular">
-	<%= image_tag("top_usercount.jpg") %>
-	<% for channel in find_popular %>
-		<%= link_to(channel.name + " (#{channel.qty})", :controller => "channel", :action => "visit", :id => channel.id) %>
-	<% end %>
-</div>

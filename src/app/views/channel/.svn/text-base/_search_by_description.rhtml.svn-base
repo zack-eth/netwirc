@@ -1,9 +1,0 @@
-<div id="search_by_description">
-	<span class="bold_blue_text" style="text-align: left;"><h4>Search by Description</h4></span>
-	<%= text_field_tag :searchDescriptionQuery %>
-	<p><div id="searchDescriptionResults"></div></p>
-	<%= observe_field(:searchDescriptionQuery,
-						:frequency => 0.5,
-						:update => 'searchDescriptionResults',
-						:url => { :controller => 'channel', :action => 'search_by_description_results' }) %>
-</div>

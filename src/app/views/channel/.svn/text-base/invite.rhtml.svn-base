@@ -1,8 +1,0 @@
-<h1>Congratulations, you now own channel <%= @channel.name %>!</h1>
-	<%= form_tag %>
-	<p><i>You have opted for this channel to be invite only.  The next step is to invite the people you wish to allow in your channel.</i></p>
-	<p>Please enter their e-mail addresses of the people you wish to allow in your channel, separated by a comma.</p>
-	<p><textarea name="textarea" cols="80" rows="5"></textarea></p>
-	<p>As soon as they join, or if they are already have a netwirc account, they will be granted access to this channel.</p>
-	<p><%= submit_tag("Invite") %> | <%= link_to("Skip and bring me to my channel.", :controller => "channel", :action => "visit", :id => @channel.name) %></p>
-	<%= end_form_tag %>

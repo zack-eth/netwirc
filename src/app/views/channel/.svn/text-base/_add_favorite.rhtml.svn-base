@@ -1,1 +1,0 @@
-<%= link_to_remote("Add to Favorites", :update => "self", :url => {:controller => "channel", :action => "add_to_favorites", :channel_id => @channel.id, :user_id => @user.id}) %>

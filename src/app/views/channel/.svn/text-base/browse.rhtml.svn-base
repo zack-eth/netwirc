@@ -1,6 +1,0 @@
-<div class="panel">
-	<div class="panel_header"><%= render(:partial => 'main/panel_header', :locals => {:title => "Browse", :current => "netwirc"}) %></div>
-	<%= render :partial => 'channel/browse_categories' %>
-	<%= render :partial => 'channel/browse_top_10' %>
-	<%= render :partial => 'channel/browse_top_favorites' %>
-</div>

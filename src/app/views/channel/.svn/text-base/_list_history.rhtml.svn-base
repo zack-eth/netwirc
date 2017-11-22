@@ -1,3 +1,0 @@
-<% for member in @memberships %>
-<%= member.last_seen %>: <%= member.channel.name %> | save as favorite | visit <br />
-<% end %>

@@ -1,9 +1,0 @@
-<div id="search_by_topic">
-	<span class="bold_blue_text" style="text-align: left;"><h3>Search by Topic</h3></span>
-	<%= text_field_tag :searchTopicQuery %>
-	<p><div id="searchTopicResults"></div></p>
-	<%= observe_field(:searchTopicQuery,
-						:frequency => 0.5,
-						:update => 'searchTopicResults',
-						:url => { :controller => 'channel', :action => 'search_by_topic_results' }) %>
-</div>

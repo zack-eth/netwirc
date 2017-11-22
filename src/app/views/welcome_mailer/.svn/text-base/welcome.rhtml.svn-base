@@ -1,2 +1,0 @@
-Dear <%= @user.name %>
-Thank you for joining Netwirc!

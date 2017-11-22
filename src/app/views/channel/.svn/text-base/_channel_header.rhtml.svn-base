@@ -1,5 +1,0 @@
-<div id="channel_header">
-	<%= render :partial => 'channel/channel_header_logo', :object => @channel %>
-	<%= render :partial => 'channel/channel_header_info', :locals => {:channel => @channel} %>
-	<%= render :partial => 'channel/channel_header_create_your_own' %>
-</div>

@@ -1,7 +1,0 @@
-<% unless @pending.empty? %>
-	Your presence is requested at the following meetings:<br>
-	<% for meeting in @pending %>
-		<br><%= Meeting.find(meeting.id).topic %>
-			<%= link_to ("confirm", :controller => "meeting", :action => "confirm", :id => meeting.id) %>
-	<% end %>
-<% end %>

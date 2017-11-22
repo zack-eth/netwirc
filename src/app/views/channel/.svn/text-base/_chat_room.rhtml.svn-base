@@ -1,6 +1,0 @@
-<div id="chat_room">
-	<div id="chat_room_shadow"></div>
-	<div id="chat_room_member_list"></div>
-	<%= render(:partial => 'channel/chat_room_conversation') %>
-	<%= render(:partial => 'channel/chat_room_type_box', :channel => @channel, :user => @user) %>
-</div>

@@ -1,7 +1,0 @@
---- 
-cwd: /var/www/netwirc
-port: "3000"
-environment: production
-address: 72.32.199.206
-pid_file: log/mongrel.pid
-servers: 20

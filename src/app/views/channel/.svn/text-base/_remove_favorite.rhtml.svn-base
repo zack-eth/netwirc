@@ -1,1 +1,0 @@
-<%= link_to_remote("Remove Favorite", :update => "self", :url => {:controller => "channel", :action => "remove_from_favorites", :channel_id => @channel.id, :user_id => @user.id}) %>

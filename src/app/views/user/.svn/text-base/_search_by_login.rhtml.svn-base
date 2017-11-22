@@ -1,9 +1,0 @@
-<div id="search_by_login">
-	<span class="bold_blue_text" style="text-align: left;"><h3>Search by Login</h3></span>
-	<%= text_field_tag :searchLoginQuery %>
-	<p><div id="searchLoginResults"></div></p>
-	<%= observe_field(:searchLoginQuery,
-						:frequency => 0.5,
-						:update => 'searchLoginResults',
-						:url => { :controller => 'user', :action => 'search_login_results' }) %>
-</div>

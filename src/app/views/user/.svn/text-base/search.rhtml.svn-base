@@ -1,8 +1,0 @@
-<div class="panel">
-	<div class="panel_header"><%= render(:partial => 'main/panel_header', :locals => {:title => "User Search", :current => ""}) %></div>
-<div id="user_search">
-    <%= render :partial => 'user/search_by_login' %>
-    <%= render :partial => 'user/search_by_fullname' %>
-    <%= render :partial => 'user/search_by_email' %>
-</div>
-</div>
