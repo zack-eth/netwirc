@@ -1,0 +1,34 @@
+8
+
+dir
+95
+svn+ssh://zack@netwirc.com/var/svn/netwirc/trunk/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu
+svn+ssh://zack@netwirc.com/var/svn/netwirc
+
+
+
+2007-03-19T20:15:58.400077Z
+33
+djberube
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+905ab876-082b-0410-95e2-f0e01b81fa59
+
+processors
+dir
+
+backends
+dir
+

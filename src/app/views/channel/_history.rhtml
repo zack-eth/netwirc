@@ -1,0 +1,6 @@
+<div id="history">
+	<%= image_tag("channel_history.jpg") %>
+	<% for membership in find_history %>
+		<%= link_to(membership.channel.name, :controller => "channel", :action => "visit", :id => membership.channel.id) %>
+	<% end %>
+</div>

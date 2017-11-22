@@ -1,0 +1,9 @@
+<div id="search_by_email">
+	<span class="bold_blue_text" style="text-align: left;"><h3>Search by Email</h3></span>
+	<%= text_field_tag :searchEmailQuery %>
+	<p><div id="searchEmailResults"></div></p>
+	<%= observe_field(:searchEmailQuery,
+						:frequency => 0.5,
+						:update => 'searchEmailResults',
+						:url => { :controller => 'user', :action => 'search_email_results' }) %>
+</div>

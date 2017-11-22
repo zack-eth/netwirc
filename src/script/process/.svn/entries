@@ -1,0 +1,54 @@
+8
+
+dir
+95
+svn+ssh://zack@netwirc.com/var/svn/netwirc/trunk/script/process
+svn+ssh://zack@netwirc.com/var/svn/netwirc
+
+
+
+2007-03-06T21:19:14.978566Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+905ab876-082b-0410-95e2-f0e01b81fa59
+
+spawner
+file
+
+
+
+
+2007-12-21T23:24:12.000000Z
+e7e52ded28489a821b5eb156f92ca0f5
+2007-03-06T21:19:14.978566Z
+1
+root
+has-props
+
+reaper
+file
+
+
+
+
+2007-12-21T23:24:12.000000Z
+cd3ea6a63889f805cfd1d146ede9ab96
+2007-03-06T21:19:14.978566Z
+1
+root
+has-props
+

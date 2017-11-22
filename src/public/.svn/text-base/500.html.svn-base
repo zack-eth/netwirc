@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>NETWIRC</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="/stylesheets/general.css?1173484781" media="screen" rel="Stylesheet" type="text/css" />
+    <link href="/stylesheets/channel.css?1173484781" media="screen" rel="Stylesheet" type="text/css" />
+
+</head>
+
+<body>
+	<div id="logo">
+	<img alt="Netwirc_website_logo" src="/images/netwirc_website_logo.jpg?1173484781" />
+</div>
+        <div style="margin-left:2.5em; margin-top:5em; color:black; width: 550px; ">
+
+	  <h1>Server Error</h1>
+	  <p>The server threw an exception.  Please wait a few moments and navigate back to our homepage at <a href="http://netwirc.com/">NetWirc.com</a>.</p>
+	</div>
+</body>
+</html>

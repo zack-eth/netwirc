@@ -1,0 +1,54 @@
+8
+
+dir
+95
+svn+ssh://zack@netwirc.com/var/svn/netwirc/trunk/public/stylesheets
+svn+ssh://zack@netwirc.com/var/svn/netwirc
+
+
+
+2007-03-18T19:25:51.658021Z
+31
+djberube
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+905ab876-082b-0410-95e2-f0e01b81fa59
+
+channel.css
+file
+
+
+
+
+2007-12-21T23:24:13.000000Z
+da8c069053f87073c689f83544808c1e
+2007-03-06T21:19:14.978566Z
+1
+root
+has-props
+
+general.css
+file
+
+
+
+
+2007-12-21T23:24:13.000000Z
+eb84f400e88d19313b98495732f1de56
+2007-03-18T19:25:51.658021Z
+31
+djberube
+has-props
+

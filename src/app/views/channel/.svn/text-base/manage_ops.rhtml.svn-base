@@ -1,0 +1,17 @@
+<div class="panel">
+	<div class="panel_header">
+		<%= render(:partial => 'main/panel_header', :locals => {:title => "Manage Ops", :current => @channel.name}) %>
+	</div>
+<div id="manage_ops">
+<p>Ops:</p>
+<div id="current_ops">
+	<%= render(:partial => "channel/manage_ops_op", :collection => @ops) %>
+</div>
+<p><%= text_field_tag :searchQuery %></p>
+<div id="searchResults"></div>
+<%= observe_field(:searchQuery,
+					:frequency => 0.5,
+					:update => 'searchResults',
+					:url => { :controller => 'channel', :action => 'manage_ops_search', :channel_id => @channel.id }) %>
+</div>
+</div>

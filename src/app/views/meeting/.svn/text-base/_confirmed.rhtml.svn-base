@@ -1,0 +1,9 @@
+<% if @confirmed.empty? %>
+	You have no meetings scheduled.
+<% else %>
+	Meetings:<br>
+	<% for meeting in @confirmed %>
+		<br><%= Meeting.find(meeting.id).topic %>
+			<%= link_to ("remove_from_schedule", :controller => "meeting", :action => "remove_from_schedule", :id => meeting.id) %>
+	<% end %>
+<% end %>

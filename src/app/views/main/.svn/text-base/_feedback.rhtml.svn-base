@@ -1,0 +1,1 @@
+<div id="feedback">Please give us your <%= link_to("FEEDBACK!", :controller => "main", :action => "select_main_tab", :c => "main", :a => :questionnaire) %></div>

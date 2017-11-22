@@ -1,0 +1,4 @@
+<div id="browse_categories">
+	<h3>Categories</h3>
+	<%= render :partial => 'channel/browse_categories_category', :collection => @categories %>
+</div>

@@ -1,0 +1,9 @@
+<div id="find_channel">
+	<%= form_tag :controller => "main", :action => "find_channel_results" %>
+		Channel
+		<%= select(:search, :by, %w{ name topic description }) %>
+		contains
+		<%= text_field_tag(:channel, nil, :size => 15, :style => "width: 80px; height: 16px; left: 195px; top: 3px;") %>
+		<%= image_submit_tag("find_channel_button.jpg", :height => 20, :style => "vertical-align: bottom; position: absolute; top: 5px; left: 290px;") %>
+	<%= end_form_tag %>
+</div>

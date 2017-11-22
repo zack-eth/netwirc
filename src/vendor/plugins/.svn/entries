@@ -1,0 +1,34 @@
+8
+
+dir
+95
+svn+ssh://zack@netwirc.com/var/svn/netwirc/trunk/vendor/plugins
+svn+ssh://zack@netwirc.com/var/svn/netwirc
+
+
+
+2007-05-03T16:43:06.870990Z
+81
+zack
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+905ab876-082b-0410-95e2-f0e01b81fa59
+
+attachment_fu
+dir
+
+rbook
+dir
+

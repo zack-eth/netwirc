@@ -1,0 +1,27 @@
+<div id="tabs">
+<% @tab_list = session[:tabs] ||= TabList.new %>
+<% @tabs = @tab_list.tabs %>
+<% @current_tab = @tab_list.get_focus %>
+<table cellpadding="5px" cellspacing="3px">
+<tr>
+<% x = 0 %>
+<% for tab in @tabs %>
+<% x += 1 %>
+<div id="tab<%= x %>">	
+	<% if tab == @current_tab -%>
+		<td style="background-color: #F9D4A7; border: 1px solid #D26403; font-weight: bold; font-size: 11px;">
+	<% else -%>
+		<td style="background-color: #DDDDDD; font-weight: bold; font-size: 11px;">
+	<% end -%>
+	<%= link_to(tab[:name], :controller => "main", :action => "select_tab", :id => tab[:id], :type => tab[:type]) %>
+	<% if tab[:closeable] %>
+		<span class="close_tab">
+		<%= link_to(image_tag("x.png", :height => 12), {:controller => "channel", :action => "leave", :id => tab[:id], :type => tab[:type]}) %>
+		</span>
+	<% end %>
+	</td>
+</div>
+<% end %>
+</tr>
+</table>
+</div>

@@ -1,0 +1,83 @@
+<form action="" method="post" onsubmit="new Ajax.Request('', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+<table cellpadding=0 cellspacing=0 width="100%">
+
+	
+		
+			<tr class="odd">
+					<td>
+						
+							<img alt="Founder_e0e0e0" src="/images/founder_E0E0E0.jpg?1173484781" />
+						
+						
+					</td>
+					<td width="40px">
+													<a href="/main/select_main_tab?a=profile&amp;i=129&amp;c=user">zack</a>
+											</td>
+					<td style="float: right;">
+						<a href="#" onclick="new Ajax.Request('/channel/kick?member_id=6612', {asynchronous:true, evalScripts:true}); return false;">X</a>
+					</td>
+			</tr>
+		
+	
+		
+			<tr class="even">
+					<td>
+						
+						
+					</td>
+					<td width="40px">
+													guest903181
+											</td>
+					<td style="float: right;">
+						<a href="#" onclick="new Ajax.Request('/channel/kick?member_id=7608', {asynchronous:true, evalScripts:true}); return false;">X</a>
+					</td>
+			</tr>
+		
+	
+		
+			<tr class="odd">
+					<td>
+						
+						
+					</td>
+					<td width="40px">
+													guest858838
+											</td>
+					<td style="float: right;">
+						<a href="#" onclick="new Ajax.Request('/channel/kick?member_id=7609', {asynchronous:true, evalScripts:true}); return false;">X</a>
+					</td>
+			</tr>
+		
+	
+		
+			<tr class="even">
+					<td>
+						
+						
+					</td>
+					<td width="40px">
+													guest672924
+											</td>
+					<td style="float: right;">
+						<a href="#" onclick="new Ajax.Request('/channel/kick?member_id=7613', {asynchronous:true, evalScripts:true}); return false;">X</a>
+					</td>
+			</tr>
+		
+	
+		
+			<tr class="odd">
+					<td>
+						
+						
+					</td>
+					<td width="40px">
+													guest465418
+											</td>
+					<td style="float: right;">
+						<a href="#" onclick="new Ajax.Request('/channel/kick?member_id=7614', {asynchronous:true, evalScripts:true}); return false;">X</a>
+					</td>
+			</tr>
+		
+	
+</table>
+</form>

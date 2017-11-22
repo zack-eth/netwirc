@@ -1,0 +1,9 @@
+<div id="browse_top_favorites">
+	<h3>Top 10 Favorites</h3>
+	<% for channel in @top_favorites %>
+	    <div class="channel">
+		<%= link_to(channel.name, { :controller => "channel", :action => "visit", :id => channel.id }) %>
+		(<%= channel.qty %>)
+		</div>
+	<% end %>
+</div>

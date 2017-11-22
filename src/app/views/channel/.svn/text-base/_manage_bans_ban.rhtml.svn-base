@@ -1,0 +1,2 @@
+<%= manage_bans_ban.user.name %> |
+<%= link_to_remote("remove ban", :update => "current_bans", :url => { :controller => "channel", :action => "manage_bans_remove", :channel_id => @channel.id, :banned_id => manage_bans_ban.user.id }) %> <br />

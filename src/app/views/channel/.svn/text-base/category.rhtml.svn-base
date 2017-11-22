@@ -1,0 +1,11 @@
+<div class="panel">
+	<div class="panel_header"><%= render(:partial => 'main/panel_header', :locals => {:title => "Category", :current => @category.name}) %></div>
+<div class="panel_contents">
+<br><br><br><br>
+<p>
+<% for channel in @channels %>
+<%= link_to (channel.name, { :controller => "channel", :action => "visit", :id => channel.id }) %><br />
+<% end %>
+</p>
+</div>
+</div>

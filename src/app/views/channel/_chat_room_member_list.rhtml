@@ -1,0 +1,29 @@
+<%= form_remote_tag(:action => "perform_act") %>
+<table cellpadding=0 cellspacing=0 width="100%">
+<% num = 0 %>
+	<% for x in chat_room_member_list %>
+		<% unless x.user.is_guest? && !(x.channel.name == "lobby") %>
+			<tr class="<%= cycle('odd', 'even') -%>">
+					<td>
+						<% if x.channel_member_role_id == $CHANNEL_MEMBER_ROLE_Founder %>
+							<%= image_tag("founder_E0E0E0.jpg") %>
+						<% end %>
+						<% if x.channel_member_role_id == $CHANNEL_MEMBER_ROLE_Op %>
+							<%= image_tag("ops_E0E0E0.jpg") %>
+						<% end %>
+					</td>
+					<td width="40px">
+						<% if x.user.user_type_id == $USER_TYPE_Guest -%>
+							<%= x.user.name %>
+						<% else -%>
+							<%= link_to(x.user.name, :controller => "main", :action => "select_main_tab", :c => "user", :a => "profile", :i => x.user.id) %>
+						<% end -%>
+					</td>
+					<td style="float: right;">
+						<%= link_to_remote("X", :url => {:controller => "channel", :action => "kick", :member_id => x.id}) %>
+					</td>
+			</tr>
+		<% end %>
+	<% end %>
+</table>
+<%= end_form_tag %>

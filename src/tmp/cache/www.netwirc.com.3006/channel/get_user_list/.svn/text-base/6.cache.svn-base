@@ -1,0 +1,6 @@
+<form action="" method="post" onsubmit="new Ajax.Request('', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+<table cellpadding=0 cellspacing=0 width="100%">
+
+	
+</table>
+</form>

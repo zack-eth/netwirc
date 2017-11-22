@@ -1,0 +1,36 @@
+<div class="panel">
+<table>
+<% for m in @logs %>
+<tr>
+	<% if !m.user %>
+		<td></td>
+		<td></td>
+		<td>
+			<span class="blue_text"><%= m.comment %></span>
+			<span class="blue_text"><%= m.created_at.strftime(" - %I:%M%p") %></span>
+		</td>
+	<% elsif m.user.picture.nil? %>
+		<td>
+			<img height=15 src="/images/default_user_pic.jpg"/>
+		</td>
+		<td style="text-align: right;"><span class="blue_text"><strong><%= m.user.name %></strong>:</span></td>
+		<td>
+			<%= m.comment %>
+			<span class="blue_text"><%= m.created_at.strftime(" - %I:%M%p") %></span>
+		</td>
+	<% else %>
+		<td>
+			<img height=15 src="<%= url_for(:controller => 'user', :action => 'picture', :id => m.user.picture.id) %>"/>
+		</td>
+		<td style="text-align: right;">
+			<span class="blue_text"><strong><%= m.user.name %></strong>:</span> 
+		</td>
+		<td>
+			<%= m.comment %>
+			<span class="blue_text"><%= m.created_at.strftime(" - %I:%M%p") %></span>
+		</td>
+	<% end %>
+</tr>
+<% end %>
+</table>
+</div>

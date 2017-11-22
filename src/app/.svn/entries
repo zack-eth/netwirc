@@ -1,0 +1,40 @@
+8
+
+dir
+95
+svn+ssh://zack@netwirc.com/var/svn/netwirc/trunk/app
+svn+ssh://zack@netwirc.com/var/svn/netwirc
+
+
+
+2007-05-26T21:39:12.528167Z
+95
+zack
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+905ab876-082b-0410-95e2-f0e01b81fa59
+
+helpers
+dir
+
+models
+dir
+
+controllers
+dir
+
+views
+dir
+

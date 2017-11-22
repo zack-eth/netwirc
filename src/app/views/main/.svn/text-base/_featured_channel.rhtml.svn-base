@@ -1,0 +1,4 @@
+<center>
+<b><%= featured_channel.name %></b><br />
+<span style="color: #8CAAD5;"><%= featured_channel.topic %></span>
+</center>

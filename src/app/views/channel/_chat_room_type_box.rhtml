@@ -1,0 +1,9 @@
+<div id="chat_room_type_box">
+	<% if @user.user_type_id == $USER_TYPE_Guest && !(@channel.name == "lobby") %>
+		Please log in to join the conversation!
+	<% else %>
+		    <%= form_remote_tag :url => { :controller => 'channel', :action => 'say', :channel_id => @channel.id, :user_id => @user.id }, :loading => "$('chat_room_type_box_entry_field').value = ''; $('chat_room_type_box_entry_field').focus;", :complete => "eval(request.responseText)" %>
+			    <input id="chat_room_type_box_entry_field" type="text" name="message" value="Type here and press enter when you're done.." onclick="$('chat_room_type_box_entry_field').value=''" /><input type="submit" value="Say" style="display: none;" />
+		    <%= end_form_tag %>
+	<% end %>
+</div>

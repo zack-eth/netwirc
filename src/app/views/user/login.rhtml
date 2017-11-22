@@ -1,0 +1,21 @@
+<div class="panel">
+	<div class="panel_header"><%= render(:partial => 'main/panel_header', :locals => {:title => "Login", :current => ""}) %></div>
+<div id="user_login">
+<%= form_tag %>
+<table>
+	<tr>
+		<td class="bold_blue_text">User name:</td>
+		<td><%= text_field("user", "name") %></td>
+	</tr>
+	<tr>
+		<td class="bold_blue_text">Password:</td>
+		<td><%= password_field("user", "password") %></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="submit" value=" Login! " /></td>
+	</tr>
+</table>
+<%= end_form_tag %>
+</div>
+</div>

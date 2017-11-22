@@ -1,0 +1,9 @@
+<div id="search_pm">
+	<h3>Search by Login</h3>
+	<%= text_field_tag(:searchPMQuery) %>
+	<div id="searchPMResults"></div>
+	<%= observe_field(:searchPMQuery,
+						:frequency => 0.5,
+						:update => 'searchPMResults',
+						:url => { :controller => 'channel', :action => 'search_pm_results', :channel_id => @channel.id }) %>
+</div>

@@ -1,0 +1,30 @@
+<div class="panel">
+	<div class="panel_header"><%= render(:partial => 'main/panel_header', :locals => {:title => "My Channels", :current => ""}) %></div>
+<div id="my_channels">
+	<% if @founded_memberships.empty? -%>
+		<span class="bold_blue_text">You have not founded any channels.</span><br>
+		<%= link_to "Click here", { :controller => "channel", :action => "create" } %> to create your own channel.
+	<% else -%>
+		<span class="bold_blue_text">You are a founder of the following channels:</span><br>
+		<%= render(:partial => 'channel/my_channels_founded', :collection => @founded_memberships) %>
+	<% end -%>
+</p>
+
+<p>
+	<% if @opped_memberships.empty? -%>
+		<span class="bold_blue_text">You do not operate any channels.</span><br>
+	<% else -%>
+		<span class="bold_blue_text">You operate the following channels:</span><br>
+		<%= render(:partial => 'channel/my_channels_opped', :collection => @opped_memberships) %>
+	<% end -%>
+</p>
+
+<p>
+	<% if @channel_favorites.empty? -%>
+		<span class="bold_blue_text">You have not marked any channels as a favorite.</span>
+	<% else -%>
+		<span class="bold_blue_text">Favorite channels:</span><br>
+		<%= render(:partial => 'channel/my_channels_favorite', :object => @channel_favorites) %>
+	<% end -%>
+</div>
+</div>

@@ -1,0 +1,10 @@
+<div class="panel">
+	<div class="panel_header">
+		<%= render(:partial => 'main/panel_header', :locals => {:title => "Private Message", :current => @with.name}) %></div>
+		<span class="profile_top_links">
+		<%= link_to("profile", :controller => "user", :action => "profile", :id => @with.id) %>
+		<%= link_to("flag!", :controller => "user", :action => "flag", :id => @with.id) %></span>
+		<%= render(:partial => 'channel/private_message_conversation') %>
+		<%= render(:partial => 'channel/private_message_type_box', :locals => {:private_message => @private_message}) %>
+</div>
+	<%= periodically_call_remote :url => { :controller => 'channel', :action => 'get_private_messages', :id => @private_message.id }, :frequency => 1, :update => 'private_message_conversation', :complete => "if ($('private_message_conversation').scrollTop == 0 || $('private_message_conversation').scrollTop > $('private_message_conversation').scrollHeight - $('private_message_conversation').clientHeight - 50) { $('private_message_conversation').scrollTop = $('private_message_conversation').scrollHeight - $('private_message_conversation').clientHeight; }" %>

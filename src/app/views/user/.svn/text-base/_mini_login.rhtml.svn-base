@@ -1,0 +1,12 @@
+<div id="mini_login">
+	<%= form_tag :controller => "user", :action => "login" %>
+	<table>
+		<tr><td>User name:</td></tr>
+		<tr><td><%= text_field("user", "name", :size => "11", :value => '', :style => "width: 90px; height: 15px;") %></td></tr>
+		<tr><td>Password:</td></tr>
+		<tr><td><%= password_field("user", "password", :size => "11", :value => '', :style => "width: 90px; height: 15px;") %></td></tr>
+		<tr><td><%= submit_tag("login") %></td></tr>
+		<tr><td><%= link_to("Register", :controller => "user", :action => "registration") %></td></tr>
+	</table>
+	<%= end_form_tag %>
+</div>

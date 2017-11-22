@@ -1,0 +1,9 @@
+<div id="search_by_fullname">
+	<span class="bold_blue_text" style="text-align: left;"><h3>Search by Name</h3></span>
+	<%= text_field_tag :searchFullnameQuery %>
+	<p><div id="searchFullnameResults"></div></p>
+	<%= observe_field(:searchFullnameQuery,
+						:frequency => 0.5,
+						:update => 'searchFullnameResults',
+						:url => { :controller => 'user', :action => 'search_fullname_results' }) %>
+</div>

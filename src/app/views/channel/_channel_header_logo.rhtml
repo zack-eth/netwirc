@@ -1,0 +1,7 @@
+<div id="channel_header_logo">
+	<% if @picture %>
+		<img height=100 width=100 src="<%= url_for(:action => :picture, :id => @picture.id) %>"/>
+	<% else %>
+		<img height=100 width=100 src="/images/default_channel_pic.jpg"/>
+	<% end %>
+</div>

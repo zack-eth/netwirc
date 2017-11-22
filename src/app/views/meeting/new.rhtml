@@ -1,0 +1,17 @@
+<%= form_tag :action => :save %>
+<p>
+	Channel: <%= @channel.name %>
+</p>
+<p>
+	Topic: <%= text_field(:meeting, :topic) %>
+</p>
+<p>
+	Begin Time: <%= datetime_select(:meeting, :begin_time) %>
+</p>
+<p>
+	End Time: <%= datetime_select(:meeting, :end_time) %>
+</p>
+<%= hidden_field(:meeting, :frequency) %>
+<%= hidden_field(:meeting, :channel_id) %>
+<%= submit_tag %>
+<%= end_form_tag %>

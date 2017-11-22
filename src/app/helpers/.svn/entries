@@ -1,0 +1,54 @@
+8
+
+dir
+95
+svn+ssh://zack@netwirc.com/var/svn/netwirc/trunk/app/helpers
+svn+ssh://zack@netwirc.com/var/svn/netwirc
+
+
+
+2007-04-11T21:31:15.751343Z
+50
+zack
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+905ab876-082b-0410-95e2-f0e01b81fa59
+
+application_helper.rb
+file
+
+
+
+
+2007-12-21T23:24:10.000000Z
+d24c19396ae74b15a13d8536a70e3eb4
+2007-04-11T21:31:15.751343Z
+50
+zack
+has-props
+
+channel_helper.rb
+file
+
+
+
+
+2007-12-21T23:24:10.000000Z
+2f2a8a17f032763b07df1bcc66a0fb78
+2007-03-06T21:19:14.978566Z
+1
+root
+has-props
+

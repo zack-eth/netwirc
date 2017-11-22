@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>NETWIRC</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <%= stylesheet_link_tag "general" %>
+    <%= stylesheet_link_tag "channel" %>
+	<%= javascript_include_tag "prototype" %>
+	<%= javascript_include_tag "effects" %>
+	<%= javascript_include_tag "dragdrop" %>
+	<%= javascript_include_tag "controls" %>	
+</head>
+
+<body>
+	<%= render(:partial => 'main/featured_channels') %>
+	<%= render(:partial => 'main/tabs') %>
+	<%= render(:partial => 'main/left_nav') %>
+	<%= render(:partial => 'main/event_listener') %>
+	<%= render(:partial => 'channel/history') %>
+	<%= render(:partial => 'channel/popular') %>
+	<%= render(:partial => 'main/flash') %>
+	</div>
+	<div id="panel">
+		<div id="window">
+        <%= @content_for_layout %>
+		</div>
+	<div>
+</body>
+</html>

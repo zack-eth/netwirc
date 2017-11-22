@@ -1,0 +1,41 @@
+8
+
+dir
+95
+svn+ssh://zack@netwirc.com/var/svn/netwirc/trunk/test/unit
+svn+ssh://zack@netwirc.com/var/svn/netwirc
+
+
+
+2007-03-06T21:19:14.978566Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+905ab876-082b-0410-95e2-f0e01b81fa59
+
+invite_mailer_test.rb
+file
+
+
+
+
+2007-12-21T23:24:10.000000Z
+a55df4b2bb58a18d18902f1a88aa5069
+2007-03-06T21:19:14.978566Z
+1
+root
+has-props
+

@@ -1,0 +1,10 @@
+<% if @founded.empty? %>
+	You have no meetings scheduled for founded channels.
+<% else %>
+	Meetings for founded channels:<br>
+	<% for meeting in @founded %>
+		<br><%= Meeting.find(meeting.id).topic %>
+			<%= link_to ("add_to_schedule", :controller => "meeting", :action => "add_to_schedule", :id => meeting.id) %>
+			<%= link_to ("delete", :controller => "meeting", :action => "delete", :id => meeting.id) %>
+	<% end %>
+<% end %>

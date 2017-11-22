@@ -1,0 +1,21 @@
+<div class="panel">
+	<div class="panel_header"><%= render(:partial => 'main/panel_header', :locals => {:title => "Profile", :current => "upload picture"}) %></div>
+<%= form_tag({:action => 'upload_picture'}, :multipart => true) %>
+	<div id="profile_upload_picture">
+	<table>
+		<tr>
+			<td class="bold_blue_text">Select your picture:</td>
+			<td><%= file_field("picture", "picture") %></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><%= submit_tag("Upload picture") %></td>
+		</tr>
+	</table>
+	</div>
+<%= end_form_tag %>
+</div>

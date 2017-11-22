@@ -1,0 +1,33 @@
+<div class="panel">
+	<div class="panel_header">
+		<%= render(:partial => 'main/panel_header', :locals => {:title => "Channel Settings", :current => @channel.name}) %></div>
+		<span class="profile_top_links">
+<%= link_to("upload picture", :controller => "channel", :action => "upload_picture", :id => @channel.id) %></span>
+<div id="channel_edit_settings">
+<%= form_tag :id => @channel.id %>
+<table>
+<tr>
+  <td class="bold_blue_text">Channel Name:</td><td><%= text_field(:channel, :name, :size => 20) %></td>
+</tr>
+<tr>
+  <td class="bold_blue_text">Topic:</td><td><%= text_field(:channel, :topic, :size => 20) %></td>
+</tr>
+<tr>
+  <td class="bold_blue_text">Description:</td><td><%= text_area(:channel, :description, :cols => "50", :rows => "6") %></td>
+</tr>
+<tr>
+  <td class="bold_blue_text">Category:</td><td><%= select (:channel, :category, @categories.collect {|p| [p.name, p.id] }, { :include_blank => true , :selected => @channel.channel_category_id }) %></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td><%= submit_tag("Save Settings") %></td>
+</tr>
+</table>
+<%= end_form_tag %>
+</div>
+</div>
+</div>

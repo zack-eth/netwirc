@@ -1,0 +1,10 @@
+<table>
+<tr>
+<td>
+Founder: <% if @channel_founder -%><%= @channel_founder.user.name %> <% if @channel_founder.user.picture -%><img height=20 align="top" src="<%= url_for(:controller => 'user', :action => 'picture', :id => @channel_founder.user.picture.id) %>"/><% end -%><% end -%>
+</td>
+<td>
+Created: <% if @channel.created_at -%><%= @channel.created_at.strftime("%m/%d/%Y") %><% end -%>
+</td>
+</tr>
+</table>

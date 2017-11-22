@@ -1,0 +1,2 @@
+<%= link_to(manage_ops_op.user.name, :controller => "user", :action => "profile", :id => manage_ops_op.user.id) %> |
+<%= link_to_remote("remove ops", :update => "current_ops", :url => { :controller => "channel", :action => "manage_ops_remove", :channel_id => @channel.id, :op_id => manage_ops_op.user.id }) %> <br />

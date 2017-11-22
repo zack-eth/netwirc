@@ -1,0 +1,32 @@
+<div class="panel">
+	<div class="panel_header"><%= render(:partial => 'main/panel_header', :locals => {:title => "Profile", :current => @user.name}) %></div>
+	<%= form_tag :id => @user.id %>
+	<span class="profile_top_links">
+	<%= link_to("upload picture", :controller => "user", :action => "upload_picture", :id => @user.id) %></span>
+	<div id="edit_profile">
+	<table>
+	<tr>
+		<td class="bold_blue_text">Username:</td><td> <%= text_field (:user, :name) %></td>
+	</tr>
+	<tr>
+		<td class="bold_blue_text">First Name:</td><td> <%= text_field(:user, :first_name) %></td>
+	</tr>
+	<tr>
+		<td class="bold_blue_text">Last Name:</td><td> <%= text_field (:user, :last_name) %></td>
+	</tr>
+	<tr>
+		<td class="bold_blue_text">Email:</td><td> <%= text_field (:user, :email) %></td>
+	</tr>
+	<tr>
+		<td class="bold_blue_text">Date of Birth:</td><td> <%= date_select (:user, :birthday, :start_year=>1900, :end_year=>(Time.now.year), :order => [:month, :day, :year]) %></td>
+	</tr>
+	<tr>
+		<td class="bold_blue_text">Zip code:</td><td> <%= text_field (:user, :zipcode) %></td>
+	</tr>
+	<tr>
+		<td></td><td><%= submit_tag %></td>
+	</tr>
+	</table>
+	</div>
+	<%= end_form_tag %>
+</div>

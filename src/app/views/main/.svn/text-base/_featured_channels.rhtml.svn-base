@@ -1,0 +1,14 @@
+<div id="featured_channels">
+	<table height="100%">
+		<tr>
+			<td>
+				<%= image_tag("featured_channels.jpg") %>
+			</td>
+			<% for x in [1, 12, 13, 14, 15] %>
+			<td width=300>
+				<%= link_to(render(:partial => 'main/featured_channel', :object => find_channel(x)), :controller => "channel", :action => "visit", :id => x) %>
+			</td>
+			<% end %>
+		</tr>
+	</table>
+</div>

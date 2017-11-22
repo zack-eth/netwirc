@@ -1,0 +1,10 @@
+<% if @results.empty? %>
+  '<%=h @phrase %>' not found!
+<% else %>
+<% unless @phrase.length == 0 || @phrase == " " %>
+  '<%=h @phrase %>' found in
+  <% for result in @results %>
+  	<br><%= link_to result.name, { :controller => "channel", :action => "visit", :id => result.id} %>
+  <% end %>
+<% end %>
+<% end %>

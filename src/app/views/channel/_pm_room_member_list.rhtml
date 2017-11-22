@@ -1,0 +1,6 @@
+<h3>Users</h3>
+<% for x in pm_room_member_list %>
+	<% unless x.user.guest? %>
+    	<div class="user"><% if x.status == "active" %><%= image_tag("green_dot.png") %><% end %><% if x.status == "idle" %><%= image_tag("yellow_dot.png") %><% end %><% if x.status == "inactive" %><%= image_tag("red_dot.png") %><% end %><% if x.user.picture %><img height=20 src="<%= url_for(:controller => 'user', :action => 'picture', :id => x.user.picture.id) %>"/><% else %>N/A<% end %><%= x.user.name %></div>
+	<% end %>
+<% end %>

@@ -1,0 +1,31 @@
+8
+
+dir
+95
+svn+ssh://zack@netwirc.com/var/svn/netwirc/trunk/tmp/cache/72.32.199.206/channel
+svn+ssh://zack@netwirc.com/var/svn/netwirc
+
+
+
+2007-03-06T21:19:14.978566Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+905ab876-082b-0410-95e2-f0e01b81fa59
+
+get_user_list
+dir
+
