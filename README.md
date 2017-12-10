@@ -1,6 +1,3 @@
-netwirc
-===========
-
 ### Chat
 
 ![chat](screenshots/chat.png?raw=true)
